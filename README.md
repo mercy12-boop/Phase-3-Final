@@ -1,6 +1,4 @@
-# Phase-3-Final
-
-# Task Manager CLI
+## Task Manager CLI
 
 ## Overview
 
