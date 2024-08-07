@@ -35,27 +35,26 @@ pipenv shell
 ## Usage
 
 Run the Application
-
 Copy code
 python3 task_manager/cli.py
 Follow the Menu Prompts
-
 The main menu will display options for creating users, projects, tasks, listing tasks, or exiting the application.
 Enter the number corresponding to your choice and follow the prompts to enter the required information.
 
-# File Structure
+## File Structure
 
 Copy code
 task_manager/
-├── models.py # SQLAlchemy models for User, Project, and Task
-├── cli.py # Main CLI application code
-├── database.py # Database setup and session creation
-├── **init**.py # Package initializer
-├── Pipfile # Pipenv configuration file
-├── Pipfile.lock # Pipenv lock file
-├── README.md # Project documentation
 
-# Example
+- \*\*├── models.py # SQLAlchemy models for User, Project, and Task
+- \*\* cli.py # Main CLI application code
+- \*\* database.py # Database setup and session creation
+- \*\* **init**.py # Package initializer
+- \*\* Pipfile # Pipenv configuration file
+- \*\* Pipfile.lock # Pipenv lock file
+- \*\* README.md # Project documentation
+
+## Example
 
 Starting the Application
 sh
@@ -71,11 +70,11 @@ Main Menu:
 4. List Tasks
 5. Exit
 
-# Contributing
+## Contributing
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Create a new Pull Request.
+- \*\*Fork the repository.
+- \*\*Create a new branch (git checkout -b feature-branch).
+- \*\*Make your changes.
+- \*\*Commit your changes (git commit -am 'Add new feature').
+- \*\*Push to the branch (git push origin feature-branch).
+- \*\*Create a new Pull Request.
