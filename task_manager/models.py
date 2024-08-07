@@ -1,9 +1,8 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Date
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
+from datetime import date
 
 Base = declarative_base()
-
-
 
 class User(Base):
     __tablename__ = 'users'
@@ -25,8 +24,11 @@ class Task(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
     description = Column(String)
+    due_date = Column(Date, nullable=True)
+    priority = Column(Integer, nullable=True)
     user_id = Column(Integer, ForeignKey('users.id'))
     project_id = Column(Integer, ForeignKey('projects.id'))
     user = relationship('User', back_populates='tasks')
     project = relationship('Project', back_populates='tasks')
+
 
